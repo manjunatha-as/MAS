@@ -1,0 +1,1 @@
+Put WsnData.csv (from Kaggle: Node Status in WSN) in this folder.
