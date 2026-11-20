@@ -345,27 +345,28 @@ def stage_neural_tuned():
 
 def _learning_curves(folds):
     """Training and validation loss per epoch of the tuned models (init seed 0,
-    every outer fold)."""
-    import matplotlib; matplotlib.use("Agg")
+    every outer fold). Drawn at print width in the common figure style; include
+    with \\includegraphics[width=\\textwidth]{fig_learning_curves.pdf}."""
+    import plot_style as PS
     import matplotlib.pyplot as plt
-    fig, axes = plt.subplots(1, 3, figsize=(12, 3.6), sharey=True)
+    fig, axes = plt.subplots(1, 3, figsize=(PS.FULL, 2.3), sharey=True)
     for ax, name in zip(axes, M.BASE_CFG):
         for f in folds:
             with open(os.path.join(C.PART, f"neural_tuned_{ARGS.grid}_{name}_{f['seed']}_{f['fold']}.json")) as fh:
                 res = json.load(fh)
             h = res["runs"][0]["history"]
             ep = np.arange(1, len(h["loss"]) + 1)
-            ax.plot(ep, h["loss"], color="#1f77b4", lw=0.8, alpha=0.7)
-            ax.plot(ep, h["val_loss"], color="#d62728", lw=0.8, alpha=0.7)
-        ax.set_title(f"{name} (tuned)", fontsize=10); ax.set_xlabel("Epoch")
+            ax.plot(ep, h["loss"], color="#1f77b4", lw=0.6, alpha=0.7)
+            ax.plot(ep, h["val_loss"], color="#d62728", lw=0.6, alpha=0.7)
+        ax.set_title(f"{name}, tuned"); ax.set_xlabel("Epoch")
         ax.set_yscale("log")
         ax.spines[["top", "right"]].set_visible(False)
-    axes[0].set_ylabel("Binary cross-entropy (log scale)")
-    axes[0].plot([], [], color="#1f77b4", label="Training loss")
-    axes[0].plot([], [], color="#d62728", label="Validation loss (held-out sensors)")
-    axes[0].legend(fontsize=8)
-    fig.tight_layout(); fig.savefig(os.path.join(C.FIG, "fig_learning_curves.png"), dpi=200)
-    plt.close(fig)
+    axes[0].set_ylabel("Binary cross-entropy")
+    h1, = axes[0].plot([], [], color="#1f77b4", label="Training loss")
+    h2, = axes[0].plot([], [], color="#d62728", label="Validation loss (held-out training sensors)")
+    fig.legend(handles=[h1, h2], loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, 1.0))
+    fig.tight_layout(); PS.save(fig, os.path.join(C.FIG, "fig_learning_curves"))
 
 
 def _fold_table():
