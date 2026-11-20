@@ -1,0 +1,512 @@
+{
+ "selected": {
+  "DT": {
+   "{\"max_depth\": null, \"min_samples_leaf\": 1}": 6,
+   "{\"max_depth\": null, \"min_samples_leaf\": 5}": 3
+  },
+  "RF": {
+   "{\"max_depth\": null, \"min_samples_leaf\": 1}": 5,
+   "{\"max_depth\": 20, \"min_samples_leaf\": 1}": 4
+  },
+  "HGB": {
+   "{\"learning_rate\": 0.1, \"max_leaf_nodes\": 15}": 3,
+   "{\"learning_rate\": 0.2, \"max_leaf_nodes\": 31}": 3,
+   "{\"learning_rate\": 0.1, \"max_leaf_nodes\": 31}": 2,
+   "{\"learning_rate\": 0.2, \"max_leaf_nodes\": 15}": 1
+  },
+  "XGBoost": {
+   "{\"learning_rate\": 0.2, \"max_depth\": 3}": 3,
+   "{\"learning_rate\": 0.1, \"max_depth\": 3}": 2,
+   "{\"learning_rate\": 0.1, \"max_depth\": 6}": 2,
+   "{\"learning_rate\": 0.2, \"max_depth\": 6}": 2
+  }
+ },
+ "pooled": {
+  "DT": {
+   "per_seed": [
+    {
+     "accuracy": 98.86,
+     "precision": 97.24334600760456,
+     "recall": 97.33587059942911,
+     "f1": 97.28958630527818,
+     "mcc": 0.9656781093247279,
+     "roc_auc": 0.9867959682912414,
+     "tn": 7840,
+     "fp": 58,
+     "fn": 56,
+     "tp": 2046,
+     "seed": 42
+    },
+    {
+     "accuracy": 98.71,
+     "precision": 97.17838354854138,
+     "recall": 96.6698382492864,
+     "f1": 96.92344383496302,
+     "mcc": 0.9610788625646152,
+     "roc_auc": 0.9796140684305293,
+     "tn": 7839,
+     "fp": 59,
+     "fn": 70,
+     "tp": 2032,
+     "seed": 52
+    },
+    {
+     "accuracy": 98.48,
+     "precision": 97.46835443037975,
+     "recall": 95.24262607040913,
+     "f1": 96.34263715110684,
+     "mcc": 0.9539358278168111,
+     "roc_auc": 0.9850774287002286,
+     "tn": 7846,
+     "fp": 52,
+     "fn": 100,
+     "tp": 2002,
+     "seed": 62
+    }
+   ],
+   "auc_mean": 0.9838291551406665,
+   "auc_sd": 0.0037501415389222924,
+   "cm_mean": {
+    "tn": 7841.666666666667,
+    "fp": 56.333333333333336,
+    "fn": 75.33333333333333,
+    "tp": 2026.6666666666667
+   }
+  },
+  "RF": {
+   "per_seed": [
+    {
+     "accuracy": 98.76,
+     "precision": 98.291015625,
+     "recall": 95.76593720266413,
+     "f1": 97.01204819277109,
+     "mcc": 0.962428533932352,
+     "roc_auc": 0.9985618551373012,
+     "tn": 7863,
+     "fp": 35,
+     "fn": 89,
+     "tp": 2013,
+     "seed": 42
+    },
+    {
+     "accuracy": 98.81,
+     "precision": 98.24817518248176,
+     "recall": 96.05137963843958,
+     "f1": 97.1373586721193,
+     "mcc": 0.9639617797474195,
+     "roc_auc": 0.9987618359102342,
+     "tn": 7862,
+     "fp": 36,
+     "fn": 83,
+     "tp": 2019,
+     "seed": 52
+    },
+    {
+     "accuracy": 98.76,
+     "precision": 98.291015625,
+     "recall": 95.76593720266413,
+     "f1": 97.01204819277109,
+     "mcc": 0.962428533932352,
+     "roc_auc": 0.9986038089349963,
+     "tn": 7863,
+     "fp": 35,
+     "fn": 89,
+     "tp": 2013,
+     "seed": 62
+    }
+   ],
+   "auc_mean": 0.9986424999941773,
+   "auc_sd": 0.00010545532670812668,
+   "cm_mean": {
+    "tn": 7862.666666666667,
+    "fp": 35.333333333333336,
+    "fn": 87.0,
+    "tp": 2015.0
+   }
+  },
+  "HGB": {
+   "per_seed": [
+    {
+     "accuracy": 99.08,
+     "precision": 98.13218390804597,
+     "recall": 97.47859181731684,
+     "f1": 97.80429594272077,
+     "mcc": 0.9722326246560902,
+     "roc_auc": 0.9991793560089042,
+     "tn": 7859,
+     "fp": 39,
+     "fn": 53,
+     "tp": 2049,
+     "seed": 42
+    },
+    {
+     "accuracy": 99.05000000000001,
+     "precision": 98.4081041968162,
+     "recall": 97.05042816365366,
+     "f1": 97.72455089820359,
+     "mcc": 0.971280140960179,
+     "roc_auc": 0.997458346775816,
+     "tn": 7865,
+     "fp": 33,
+     "fn": 62,
+     "tp": 2040,
+     "seed": 52
+    },
+    {
+     "accuracy": 99.03999999999999,
+     "precision": 98.08245445829338,
+     "recall": 97.33587059942911,
+     "f1": 97.70773638968481,
+     "mcc": 0.9710174750482696,
+     "roc_auc": 0.9982352600316258,
+     "tn": 7858,
+     "fp": 40,
+     "fn": 56,
+     "tp": 2046,
+     "seed": 62
+    }
+   ],
+   "auc_mean": 0.9982909876054485,
+   "auc_sd": 0.000861856929517196,
+   "cm_mean": {
+    "tn": 7860.666666666667,
+    "fp": 37.333333333333336,
+    "fn": 57.0,
+    "tp": 2045.0
+   }
+  },
+  "XGBoost": {
+   "per_seed": [
+    {
+     "accuracy": 98.9,
+     "precision": 97.47378455672069,
+     "recall": 97.2882968601332,
+     "f1": 97.38095238095238,
+     "mcc": 0.9668482090659286,
+     "roc_auc": 0.99902446126264,
+     "tn": 7845,
+     "fp": 53,
+     "fn": 57,
+     "tp": 2045,
+     "seed": 42
+    },
+    {
+     "accuracy": 99.09,
+     "precision": 98.13307802776447,
+     "recall": 97.52616555661275,
+     "f1": 97.82868050584585,
+     "mcc": 0.9725381485325013,
+     "roc_auc": 0.9986502201354617,
+     "tn": 7859,
+     "fp": 39,
+     "fn": 52,
+     "tp": 2050,
+     "seed": 52
+    },
+    {
+     "accuracy": 98.97,
+     "precision": 97.93764988009592,
+     "recall": 97.14557564224549,
+     "f1": 97.54000477668976,
+     "mcc": 0.9688993308482312,
+     "roc_auc": 0.9988094518141508,
+     "tn": 7855,
+     "fp": 43,
+     "fn": 60,
+     "tp": 2042,
+     "seed": 62
+    }
+   ],
+   "auc_mean": 0.9988280444040841,
+   "auc_sd": 0.00018781205663707313,
+   "cm_mean": {
+    "tn": 7853.0,
+    "fp": 45.0,
+    "fn": 56.333333333333336,
+    "tp": 2045.6666666666667
+   }
+  },
+  "Threshold-2": {
+   "per_seed": [
+    {
+     "accuracy": 97.28,
+     "precision": 97.60665972944848,
+     "recall": 89.24833491912464,
+     "f1": 93.24055666003976,
+     "mcc": 0.9168598925426158,
+     "roc_auc": NaN,
+     "tn": 7852,
+     "fp": 46,
+     "fn": 226,
+     "tp": 1876,
+     "seed": 42
+    },
+    {
+     "accuracy": 97.3,
+     "precision": 96.92622950819673,
+     "recall": 90.00951474785919,
+     "f1": 93.33991119881598,
+     "mcc": 0.9174838355878697,
+     "roc_auc": NaN,
+     "tn": 7838,
+     "fp": 60,
+     "fn": 210,
+     "tp": 1892,
+     "seed": 52
+    },
+    {
+     "accuracy": 97.22,
+     "precision": 97.05882352941177,
+     "recall": 89.48620361560418,
+     "f1": 93.11881188118812,
+     "mcc": 0.9149891785485413,
+     "roc_auc": NaN,
+     "tn": 7841,
+     "fp": 57,
+     "fn": 221,
+     "tp": 1881,
+     "seed": 62
+    }
+   ],
+   "auc_mean": NaN,
+   "auc_sd": NaN,
+   "cm_mean": {
+    "tn": 7843.666666666667,
+    "fp": 54.333333333333336,
+    "fn": 219.0,
+    "tp": 1883.0
+   }
+  }
+ },
+ "importance": [
+  {
+   "model": "DT",
+   "metric": "accuracy",
+   "feature": "BatteryLife",
+   "mean": 23.729258268964152,
+   "std": 0.5724481403038839
+  },
+  {
+   "model": "DT",
+   "metric": "accuracy",
+   "feature": "SensorData",
+   "mean": 1.2519508813626452,
+   "std": 0.26999615049616266
+  },
+  {
+   "model": "DT",
+   "metric": "accuracy",
+   "feature": "Temperature",
+   "mean": 10.53733907704496,
+   "std": 0.9119831297569863
+  },
+  {
+   "model": "DT",
+   "metric": "f1",
+   "feature": "BatteryLife",
+   "mean": 56.50217843159902,
+   "std": 1.9202669333181521
+  },
+  {
+   "model": "DT",
+   "metric": "f1",
+   "feature": "SensorData",
+   "mean": 2.8889924191009246,
+   "std": 0.5865891368118957
+  },
+  {
+   "model": "DT",
+   "metric": "f1",
+   "feature": "Temperature",
+   "mean": 25.44261321486851,
+   "std": 1.3160391510258624
+  },
+  {
+   "model": "HGB",
+   "metric": "accuracy",
+   "feature": "BatteryLife",
+   "mean": 24.261467617349968,
+   "std": 0.4601166635368298
+  },
+  {
+   "model": "HGB",
+   "metric": "accuracy",
+   "feature": "SensorData",
+   "mean": 0.48076846900376324,
+   "std": 0.09886722966124843
+  },
+  {
+   "model": "HGB",
+   "metric": "accuracy",
+   "feature": "Temperature",
+   "mean": 11.429203802733214,
+   "std": 1.0103096188997314
+  },
+  {
+   "model": "HGB",
+   "metric": "f1",
+   "feature": "BatteryLife",
+   "mean": 58.63030612085965,
+   "std": 1.9027581796475506
+  },
+  {
+   "model": "HGB",
+   "metric": "f1",
+   "feature": "SensorData",
+   "mean": 1.1739287231116071,
+   "std": 0.2264700348951346
+  },
+  {
+   "model": "HGB",
+   "metric": "f1",
+   "feature": "Temperature",
+   "mean": 27.66211617629006,
+   "std": 1.2037845715928497
+  },
+  {
+   "model": "RF",
+   "metric": "accuracy",
+   "feature": "BatteryLife",
+   "mean": 22.252262824321647,
+   "std": 0.275140557379859
+  },
+  {
+   "model": "RF",
+   "metric": "accuracy",
+   "feature": "SensorData",
+   "mean": 2.889705882352942,
+   "std": 0.24434059756241716
+  },
+  {
+   "model": "RF",
+   "metric": "accuracy",
+   "feature": "Temperature",
+   "mean": 9.154530600118838,
+   "std": 0.7575698076991884
+  },
+  {
+   "model": "RF",
+   "metric": "f1",
+   "feature": "BatteryLife",
+   "mean": 52.8567921149189,
+   "std": 2.0942548740364826
+  },
+  {
+   "model": "RF",
+   "metric": "f1",
+   "feature": "SensorData",
+   "mean": 6.532473924258641,
+   "std": 0.38799405761254624
+  },
+  {
+   "model": "RF",
+   "metric": "f1",
+   "feature": "Temperature",
+   "mean": 22.559737646975943,
+   "std": 0.9212643567046305
+  },
+  {
+   "model": "XGBoost",
+   "metric": "accuracy",
+   "feature": "BatteryLife",
+   "mean": 24.696806298276886,
+   "std": 0.5927346534242927
+  },
+  {
+   "model": "XGBoost",
+   "metric": "accuracy",
+   "feature": "SensorData",
+   "mean": 0.2480342642107365,
+   "std": 0.13333966774519782
+  },
+  {
+   "model": "XGBoost",
+   "metric": "accuracy",
+   "feature": "Temperature",
+   "mean": 11.085680332739157,
+   "std": 0.9807840310743721
+  },
+  {
+   "model": "XGBoost",
+   "metric": "f1",
+   "feature": "BatteryLife",
+   "mean": 59.92237532023216,
+   "std": 2.1237802429816335
+  },
+  {
+   "model": "XGBoost",
+   "metric": "f1",
+   "feature": "SensorData",
+   "mean": 0.5980518701292711,
+   "std": 0.300697075036968
+  },
+  {
+   "model": "XGBoost",
+   "metric": "f1",
+   "feature": "Temperature",
+   "mean": 26.949411027241393,
+   "std": 1.2064652948587913
+  }
+ ],
+ "intrinsic": [
+  {
+   "model": "DT",
+   "feature": "BatteryLife",
+   "mean": 0.6934327635862914,
+   "std": 0.010636499386328107
+  },
+  {
+   "model": "DT",
+   "feature": "SensorData",
+   "mean": 0.020443389093832122,
+   "std": 0.0030994132973771924
+  },
+  {
+   "model": "DT",
+   "feature": "Temperature",
+   "mean": 0.28612384731987645,
+   "std": 0.008720311680857011
+  },
+  {
+   "model": "RF",
+   "feature": "BatteryLife",
+   "mean": 0.6349019857842905,
+   "std": 0.009026531003193176
+  },
+  {
+   "model": "RF",
+   "feature": "SensorData",
+   "mean": 0.08343668347698537,
+   "std": 0.0019607057827169725
+  },
+  {
+   "model": "RF",
+   "feature": "Temperature",
+   "mean": 0.2816613307387241,
+   "std": 0.00811000955082358
+  },
+  {
+   "model": "XGBoost",
+   "feature": "BatteryLife",
+   "mean": 0.5247425436973572,
+   "std": 0.030097959167014063
+  },
+  {
+   "model": "XGBoost",
+   "feature": "SensorData",
+   "mean": 0.03318147568239106,
+   "std": 0.0045300094115040945
+  },
+  {
+   "model": "XGBoost",
+   "feature": "Temperature",
+   "mean": 0.4420759644773271,
+   "std": 0.027959914266972977
+  }
+ ],
+ "dt_rules_depth3": "|--- BatteryLife <= 15.0\n|   |--- class: 1\n|--- BatteryLife >  15.0\n|   |--- Temperature <= 70.6\n|   |   |--- Temperature <= 6.5\n|   |   |   |--- Temperature <= 5.9\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |   |--- Temperature >  5.9\n|   |   |   |   |--- class: 0\n|   |   |--- Temperature >  6.5\n|   |   |   |--- SensorData <= 100.8\n|   |   |   |   |--- truncated branch of depth 10\n|   |   |   |--- SensorData >  100.8\n|   |   |   |   |--- class: 1\n|   |--- Temperature >  70.6\n|   |   |--- Temperature <= 75.0\n|   |   |   |--- BatteryLife <= 75.9\n|   |   |   |   |--- truncated branch of depth 8\n|   |   |   |--- BatteryLife >  75.9\n|   |   |   |   |--- class: 0\n|   |   |--- Temperature >  75.0\n|   |   |   |--- class: 1\n",
+ "dt_size": {
+  "depth": 13,
+  "leaves": 62
+ }
+}

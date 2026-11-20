@@ -1,0 +1,134 @@
+{
+ "rows": 10000,
+ "sensors": 100,
+ "rows_per_sensor": [
+  100,
+  100
+ ],
+ "normal": 7898,
+ "faulty": 2102,
+ "missing_values": 0,
+ "timestamps_per_sensor_max": 1,
+ "sensor_type_counts": {
+  "Temperature": 3400,
+  "Humidity": 3300,
+  "Pressure": 3300
+ },
+ "fault_rate_by_type": {
+  "Humidity": 0.2085,
+  "Pressure": 0.2118,
+  "Temperature": 0.2103
+ },
+ "fault_rate_per_sensor": {
+  "count": 100.0,
+  "mean": 0.2102,
+  "std": 0.0857,
+  "min": 0.1,
+  "25%": 0.1275,
+  "50%": 0.21,
+  "75%": 0.28,
+  "max": 0.38
+ },
+ "normal_ranges": {
+  "SensorData": [
+   0.0021749530145887,
+   99.9843559589141
+  ],
+  "BatteryLife": [
+   15.0138919996951,
+   97.5770919192074
+  ],
+  "Temperature": [
+   5.1516423566223,
+   74.9911893244961
+  ]
+ },
+ "range_rule": {
+  "tp": 1832,
+  "fp": 1,
+  "accuracy": 97.28999999999999,
+  "median_temp_inrange_faulty": 68.740630204164
+ },
+ "correlation": {
+  "SensorData": {
+   "SensorData": 1.0,
+   "BatteryLife": 0.0009,
+   "Temperature": 0.0662,
+   "IsFaulty": -0.0027
+  },
+  "BatteryLife": {
+   "SensorData": 0.0009,
+   "BatteryLife": 1.0,
+   "Temperature": -0.158,
+   "IsFaulty": -0.5017
+  },
+  "Temperature": {
+   "SensorData": 0.0662,
+   "BatteryLife": -0.158,
+   "Temperature": 1.0,
+   "IsFaulty": 0.2137
+  },
+  "IsFaulty": {
+   "SensorData": -0.0027,
+   "BatteryLife": -0.5017,
+   "Temperature": 0.2137,
+   "IsFaulty": 1.0
+  }
+ },
+ "bins_BatteryLife": {
+  "<20": [
+   1434,
+   2000
+  ],
+  "20\u201340": [
+   313,
+   2410
+  ],
+  "40\u201360": [
+   94,
+   1398
+  ],
+  "60\u201380": [
+   225,
+   2407
+  ],
+  "80\u2013100": [
+   36,
+   1785
+  ]
+ },
+ "bins_Temperature": {
+  "<10": [
+   115,
+   184
+  ],
+  "10\u201320": [
+   85,
+   568
+  ],
+  "20\u201330": [
+   146,
+   1187
+  ],
+  "30\u201340": [
+   243,
+   2006
+  ],
+  "40\u201350": [
+   407,
+   2174
+  ],
+  "50\u201360": [
+   308,
+   2181
+  ],
+  "60\u201370": [
+   234,
+   1011
+  ],
+  "\u226570": [
+   564,
+   689
+  ]
+ }
+}

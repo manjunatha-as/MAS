@@ -1,0 +1,17 @@
+{
+ "python": "3.12.3",
+ "platform": "Linux-6.18.44-fc-v509-x86_64-with-glibc2.39",
+ "processor": "x86_64",
+ "cpu_count": 2,
+ "numpy": "1.26.4",
+ "pandas": "2.2.2",
+ "sklearn": "1.5.1",
+ "xgboost": "2.1.4",
+ "scipy": "1.13.1",
+ "tensorflow": "2.18.0",
+ "gpus": [],
+ "ram_gb": 8.4,
+ "cpu_model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+ "grid": "full",
+ "quick": false
+}
