@@ -1,10 +1,12 @@
-# Tested with Python 3.13.17 and the versions in brackets.
-tensorflow>=2.16        # [2.21.0]  (on Linux, tensorflow-cpu also works)
-scikit-learn>=1.4       # [1.9.1]
-xgboost>=2.0            # [3.4.1]
-numpy>=1.26             # [2.5.3]
-pandas>=2.0             # [3.0.5]
-scipy>=1.11
+# Versions used for all results reported in the manuscript (Python 3.12).
+# Other scikit-learn versions can produce different StratifiedGroupKFold folds
+# and therefore slightly different numbers, so keep these pins for reproduction.
+tensorflow==2.18.0
+scikit-learn==1.5.1
+xgboost==2.1.4
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
 matplotlib>=3.8
 tabulate>=0.9
 psutil>=5.9
