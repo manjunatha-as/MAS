@@ -1,0 +1,12 @@
+# Versions used for all results reported in the manuscript (Python 3.12).
+# Other scikit-learn versions can produce different StratifiedGroupKFold folds
+# and therefore slightly different numbers, so keep these pins for reproduction.
+tensorflow==2.18.0
+scikit-learn==1.5.1
+xgboost==2.1.4
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+matplotlib>=3.8
+tabulate>=0.9
+psutil>=5.9
